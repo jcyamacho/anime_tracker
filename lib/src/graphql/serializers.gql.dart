@@ -1,0 +1,127 @@
+import 'package:anime_tracker/src/graphql/queries/viewer_info/viewer_info.data.gql.dart'
+    show GViewerInfoData, GViewerInfoData_Viewer, GViewerInfoData_Viewer_avatar;
+import 'package:anime_tracker/src/graphql/queries/viewer_info/viewer_info.req.gql.dart'
+    show GViewerInfoReq;
+import 'package:anime_tracker/src/graphql/queries/viewer_info/viewer_info.var.gql.dart'
+    show GViewerInfoVars;
+import 'package:anime_tracker/src/graphql/schema.schema.gql.dart'
+    show
+        GActivitySort,
+        GActivityType,
+        GAiringScheduleInput,
+        GAiringSort,
+        GAniChartHighlightInput,
+        GCharacterNameInput,
+        GCharacterRole,
+        GCharacterSort,
+        GCountryCode,
+        GFuzzyDateInput,
+        GFuzzyDateInt,
+        GJson,
+        GLikeableType,
+        GMediaExternalLinkInput,
+        GMediaFormat,
+        GMediaListOptionsInput,
+        GMediaListSort,
+        GMediaListStatus,
+        GMediaRankType,
+        GMediaRelation,
+        GMediaSeason,
+        GMediaSort,
+        GMediaSource,
+        GMediaStatus,
+        GMediaTitleInput,
+        GMediaTrendSort,
+        GMediaType,
+        GModActionType,
+        GModRole,
+        GNotificationOptionInput,
+        GNotificationType,
+        GRecommendationRating,
+        GRecommendationSort,
+        GReviewRating,
+        GReviewSort,
+        GRevisionHistoryAction,
+        GScoreFormat,
+        GSiteTrendSort,
+        GStaffLanguage,
+        GStaffNameInput,
+        GStaffSort,
+        GStudioSort,
+        GSubmissionSort,
+        GSubmissionStatus,
+        GThreadCommentSort,
+        GThreadSort,
+        GUserSort,
+        GUserStaffNameLanguage,
+        GUserStatisticsSort,
+        GUserTitleLanguage;
+import 'package:built_collection/built_collection.dart';
+import 'package:built_value/serializer.dart';
+import 'package:built_value/standard_json_plugin.dart' show StandardJsonPlugin;
+import 'package:gql_code_builder/src/serializers/operation_serializer.dart'
+    show OperationSerializer;
+
+part 'serializers.gql.g.dart';
+
+final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
+  ..add(OperationSerializer())
+  ..addPlugin(StandardJsonPlugin());
+@SerializersFor([
+  GActivitySort,
+  GActivityType,
+  GAiringScheduleInput,
+  GAiringSort,
+  GAniChartHighlightInput,
+  GCharacterNameInput,
+  GCharacterRole,
+  GCharacterSort,
+  GCountryCode,
+  GFuzzyDateInput,
+  GFuzzyDateInt,
+  GJson,
+  GLikeableType,
+  GMediaExternalLinkInput,
+  GMediaFormat,
+  GMediaListOptionsInput,
+  GMediaListSort,
+  GMediaListStatus,
+  GMediaRankType,
+  GMediaRelation,
+  GMediaSeason,
+  GMediaSort,
+  GMediaSource,
+  GMediaStatus,
+  GMediaTitleInput,
+  GMediaTrendSort,
+  GMediaType,
+  GModActionType,
+  GModRole,
+  GNotificationOptionInput,
+  GNotificationType,
+  GRecommendationRating,
+  GRecommendationSort,
+  GReviewRating,
+  GReviewSort,
+  GRevisionHistoryAction,
+  GScoreFormat,
+  GSiteTrendSort,
+  GStaffLanguage,
+  GStaffNameInput,
+  GStaffSort,
+  GStudioSort,
+  GSubmissionSort,
+  GSubmissionStatus,
+  GThreadCommentSort,
+  GThreadSort,
+  GUserSort,
+  GUserStaffNameLanguage,
+  GUserStatisticsSort,
+  GUserTitleLanguage,
+  GViewerInfoData,
+  GViewerInfoData_Viewer,
+  GViewerInfoData_Viewer_avatar,
+  GViewerInfoReq,
+  GViewerInfoVars
+])
+final Serializers serializers = _serializersBuilder.build();

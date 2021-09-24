@@ -39,7 +39,9 @@ dependencies:
   flutter_secure_storage: ^4.2.1
   oauth2: ^2.0.0
   flow_builder: ^0.0.4
-  json_annotation: ^4.1.0
+  ferry: ^0.10.4
+  ferry_flutter: ^0.5.4
+  gql_http_link: ^0.4.0
 
 dev_dependencies:
   flutter_test:
@@ -52,7 +54,8 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^1.0.0
   build_runner: ^2.0.0
-  json_serializable: ^5.0.0
+  ferry_generator: ^0.4.4
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

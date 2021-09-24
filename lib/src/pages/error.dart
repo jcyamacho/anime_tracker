@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:anime_tracker/src/components/error_details.dart';
+
 class Error extends StatelessWidget {
   const Error({Key? key}) : super(key: key);
 
@@ -7,6 +9,6 @@ class Error extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const ErrorDetail();
   }
 }
